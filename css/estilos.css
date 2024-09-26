@@ -123,3 +123,17 @@ a {
 
 
 
+
+.destaque{
+
+    background-image: url(../imagens/fundo-destaque.jpg);
+    height: 75vh;
+   color: var(--cor-clara);
+   text-align: center;
+   display: flex;
+   justify-content: center ;
+   background-attachment: fixed;
+}
+
+
+
