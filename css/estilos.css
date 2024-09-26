@@ -1,7 +1,25 @@
+/* Importando font do google */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Alterando o Box Model */
 * {
     box-sizing: border-box;
 }
 
+
+/* Declaração de varáveis (sempre no :root) */
+:root {
+    --cor-titulo: #4d4d4d;
+    --cor-texto: #333;
+    --cor-escur: #000;
+    --cor-clara: #fff;
+    --cor-intermediaria: #ececec;
+
+
+}
+
+
+/* Reset de alguns elementos */
 body,
 h1,
 h2,
@@ -16,4 +34,23 @@ figure,
 
 img {
     max-width: 100%;
+}
+
+/* Aplicando a fonte */
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: var(--cor-texto);
+}
+
+/* Remover a barra do link */
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* Extra bold */
+font-size: 1.5rem;
 }
