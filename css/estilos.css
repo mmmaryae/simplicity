@@ -88,7 +88,7 @@ a {
     background-color: var(--cor-intermediaria);
 }
 
-.links-menu{
+.links-menu {
     list-style: none;
     display: none;
 }
@@ -102,21 +102,21 @@ a {
     height: 50px;
 }
 
-.links-menu.aberto{
-    
+.links-menu.aberto {
+
     /* Usamos o flex para fazer os links aparecerem e ao mesmo tempo ter acesso a todas as vantagens do flex */
     display: flex;
-    
+
     /* Fazemos com que os links fiquem dispostos como coluna (verticalmente) */
     flex-direction: column;
-    
+
     /* Usamos o position-absolute para "soltar" a lista de links na tela e com as propriedades/coordenadas left e rigth ajustar sua posição em relação às laterais. */
     position: absolute;
-    
+
     /* Abre ele, vai de uma ponta ate a outras */
     left: 0;
     right: 0;
-   
+
     background-color: var(--cor-clara);
 }
 
@@ -124,63 +124,73 @@ a {
 
 
 
-.destaque{
+.destaque {
     height: 75vh;
 
     background-image: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
-   color: var(--cor-clara);
-   text-align: center;
-   display: flex;
-   justify-content: center ;
-   flex-direction: column;
-   
+    color: var(--cor-clara);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 
 /* Regra de animação */
 
-@keyframes animaDestaque{
+@keyframes animaDestaque {
+
     /* Como começa  */
-from {
-    opacity: 0;
-/* Movimento de cima para baixo */
-    transform: translateY(-500px) 
-    /* O texto sair de cima colocar num negativo */
-    
-    /* Começar menos (valor abaixo de 1) */
-    scale(0.5)
-    
-    /* Deixar o texto girando */
-    /* rotate(360deg); */
-    /* X capotando */
-    /* Y girando "o corpo" */
-    /* Rotate "seco" meio q caindo */
-}
+    from {
+        opacity: 0;
+        /* Movimento de cima para baixo */
+        transform: translateY(-500px)
+            /* O texto sair de cima colocar num negativo */
+
+            /* Começar menos (valor abaixo de 1) */
+            scale(0.5)
+            /* Deixar o texto girando */
+            /* rotate(360deg); */
+            /* X capotando */
+            /* Y girando "o corpo" */
+            /* Rotate "seco" meio q caindo */
+    }
 
 
 
-/* Como termina */
-to{
-    opacity: 1;
-transform: translateY();
-}
+    /* Como termina */
+    to {
+        opacity: 1;
+        transform: translateY();
+    }
 
 }
 
 
 /* Etapa 2 (aplicar a animação) */
 
-.destaque h2, .destaque p {
+.destaque h2,
+.destaque p {
 
-animation-name: animaDestaque;
-animation-duration: 2s;
+    animation-name: animaDestaque;
+    animation-duration: 2s;
 
-/* animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite;
 (deixa a animacação sem fim) */
 
 
-/* animation-direction: alternate; */
+    /* animation-direction: alternate; */
 
 
 }
+
+
+.destaque h2{
+/* Ela é usada para definir um valor que se ajusta dinamicamente entre um valor mínimo, ideal/flexível/variável e máximo. */
+    font-size: clamp(3rem, 10vw, 7rem);
+}
+
+
+.destaque p{font-size: clamp(1.5rem, 3vw, 3rem );}
