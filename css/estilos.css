@@ -125,15 +125,62 @@ a {
 
 
 .destaque{
+    height: 75vh;
 
     background-image: url(../imagens/fundo-destaque.jpg);
-    height: 75vh;
+    background-attachment: fixed;
    color: var(--cor-clara);
    text-align: center;
    display: flex;
    justify-content: center ;
-   background-attachment: fixed;
+   flex-direction: column;
+   
+}
+
+
+/* Regra de animação */
+
+@keyframes animaDestaque{
+    /* Como começa  */
+from {
+    opacity: 0;
+/* Movimento de cima para baixo */
+    transform: translateY(-500px) 
+    /* O texto sair de cima colocar num negativo */
+    
+    /* Começar menos (valor abaixo de 1) */
+    scale(0.5)
+    
+    /* Deixar o texto girando */
+    /* rotate(360deg); */
+    /* X capotando */
+    /* Y girando "o corpo" */
+    /* Rotate "seco" meio q caindo */
 }
 
 
 
+/* Como termina */
+to{
+    opacity: 1;
+transform: translateY();
+}
+
+}
+
+
+/* Etapa 2 (aplicar a animação) */
+
+.destaque h2, .destaque p {
+
+animation-name: animaDestaque;
+animation-duration: 2s;
+
+/* animation-iteration-count: infinite;
+(deixa a animacação sem fim) */
+
+
+/* animation-direction: alternate; */
+
+
+}
