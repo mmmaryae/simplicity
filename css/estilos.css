@@ -229,8 +229,8 @@ article address {
 
 .historia {
     background-image: url(../imagens/fundo-madeira.jpg);
-/* background-size: cover; */
-    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .historia h2 {
@@ -244,8 +244,13 @@ article address {
 
 /* mínimo, ideal/flexível/variável e máximo. */
 .historia iframe {
-    width: clamp(50%, 100%, 700px);
+    /* width: clamp(50%, 100%, 700px); */
     margin-bottom: 2rem;
+
+    width: 100%;
+    max-width: 700px;
+
+
 }
 
 
