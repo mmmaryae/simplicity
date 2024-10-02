@@ -71,7 +71,7 @@ a {
 .topo {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -343,4 +343,11 @@ podemos usar even(par) ou add (ímpar) */
     tr:nth-child(even){
 
         background-color: rgb(214, 212, 212);
+    }
+
+    .limitador{
+        width: 95vw;
+        max-width: 1000px;
+        margin: auto;
+        background-color: yellow;
     }
