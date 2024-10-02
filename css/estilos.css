@@ -293,3 +293,54 @@ article address {
     border-bottom: solid 1px;
 
 }
+
+/* Regras para a tabela */
+table {
+    border: solid 4px var(--cor-escura);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+caption {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
+}
+
+td,
+th {
+    border: solid 1px var(--cor-escura);
+}
+
+th {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0.4rem;
+}
+
+/* Centralizando os ultimos td */
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:last-child,
+th:last-child {
+    text-align: right;
+}
+
+/* selecionando linhas alternadas.
+podemos usar even(par) ou add (ímpar) */
+
+
+
+    tr:nth-child(even){
+
+        background-color: rgb(214, 212, 212);
+    }
