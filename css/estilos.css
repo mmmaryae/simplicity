@@ -69,14 +69,39 @@ a {
 }
 
 .topo {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+
 }
+
+/* Cabeçalho/topo "cheio", ou seja, pegando 100% da tela e fixado */
+
+/* Div com a classe limitador dentro do topo (sub-cabeçalho): aplicamos ao ajustes de leyout (flex) */
+
+
+.topo .limitador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Classe que será aplicada rm algumas partes do site visando criar limites de tamanho. */
+
+.limitador {
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;
+    background-color: yellow;
+}
+
+
+
+
+
+
 
 .titulo-menu a {
     color: var(--cor-escura);
@@ -340,14 +365,7 @@ podemos usar even(par) ou add (ímpar) */
 
 
 
-    tr:nth-child(even){
+tr:nth-child(even) {
 
-        background-color: rgb(214, 212, 212);
-    }
-
-    .limitador{
-        width: 95vw;
-        max-width: 1000px;
-        margin: auto;
-        background-color: yellow;
-    }
+    background-color: rgb(214, 212, 212);
+}
