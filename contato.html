@@ -44,46 +44,75 @@
 
             <!-- POST: envia dados via corpo do formulário, não ficam expostos. è o recomendável para formuláros de cadastro e contatos em geral. -->
 
+            <div>
 
 
-            <form action="" method="post"></form>
 
-            <!-- Texto do lado do campo -->
+<!-- <form> pegar ttodo o formulário -->
+
+                <form action="" method="post">
+                <!-- Texto do lado do campo -->
 
 
-            <!-- For: Conecta o label e input, atraves dos nomes do id e name  -->
+                <!-- For: Conecta o label e input, atraves dos nomes do id e name  -->
 
-            <!-- Texto exibido"Nome:"" -->
-            <label for="nome">Nome:</label>
+                <!-- Texto exibido"Nome:"" -->
+                <label for="nome">Nome:</label>
 
-            <input type="text" name="nome" id="nome" placeholder="Digite o nome completo">
-            <!-- placeholder, uma orientação 'dentro' do input -->
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome completo">
+                <!-- placeholder, uma orientação 'dentro' do input -->
 
+            </div>
 
             <div>
 
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+                <input required type="email" name="email" id="email" placeholder="Digite seu E-mail">
             </div>
 
             <div>
 
                 <label for="nascimento">Data de nascimento:</label>
-                <input type="date" name="nascimento" id="nascimento">
+                <input required type="date" name="nascimento" id="nascimento">
 
 
             </div>
 
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input required type="tel" name="telefone" id="telefone">
+            </div>
+
+            <div>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value=""></option>
+                    <option>Dúvidas</option>
+                    <option>Elogios</option>
+                    <option>Reclamções</option>
+                    <option>Outros</option>
+                </select>
+
+            </div>
+
+            <div>
+
+                <label for="mensagem">Mensagem:</label>
+
+                <textarea required name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
 
 
+                <!-- textarea: sempre deixar em uma linha só -->
+                <!-- cols> largura / rows> altura -->
 
+            </div>
 
+            <button type="submit">Enviar dados</button>
 
+            <!-- tornar o campo obrigatorio "required" -->
 
-
-
-
-
+        </form>
 
 
 
