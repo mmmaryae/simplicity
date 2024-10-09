@@ -72,7 +72,7 @@ a {
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
-
+    z-index: 10;
 }
 
 /* Cabeçalho/topo "cheio", ou seja, pegando 100% da tela e fixado */
@@ -392,7 +392,7 @@ tr:nth-child(even) {
 
 
 
-.imgservicos img:hover{
-transform: scale(1);
+.imgservicos img:hover {
+    transform: scale(1);
 
 }
