@@ -94,7 +94,7 @@ a {
     width: 95vw;
     max-width: 1000px;
     margin: auto;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 
@@ -387,12 +387,46 @@ tr:nth-child(even) {
     transition: 0.5;
 }
 
-
-
-
-
-
 .imgservicos img:hover {
     transform: scale(1);
 
+}
+
+/* @media screen */
+
+
+@media screen and (min-width:600px) {
+
+    /* escondeu o menu */
+    .titulo-menu {
+        display: none;
+    }
+
+    /* mostrar links do menu */
+    .links-menu {
+        display: flex;
+    }
+
+    /*  ajustamos o tamanho do menu(nav) fazendo-o "esticar", aumentando o espaçamento dentro dele*/
+    .menu {
+      
+        width: 60%;
+    }
+
+    /*Forçamos cada item (li) da lista a ter largura total e, com isso,
+    redistribuição e ocupar todos os espaços dentro do menu (nav) */
+    .links-menu li {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+/* Aumentamos o tamanho base do font-size. Desta forma, todos os textos do site
+(em especial os que usam REM), mudam de tamanho proporcionalmente */
+
+    html{ font-size: 28px;}
+        .topo .limitador{
+            height: 100px;
+        }
 }
