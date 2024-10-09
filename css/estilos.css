@@ -392,6 +392,62 @@ tr:nth-child(even) {
 
 }
 
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+form div {
+    margin-top: 1rem;
+}
+
+input,
+select, textarea {
+
+    width: 100%;
+    border: none;
+    padding: 6px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+
+textarea {height: auto;}
+
+button{
+    border: none;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+button:hover, button:focus{
+background-color: darkblue;
+cursor: pointer;
+transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* @media screen */
 
 
@@ -409,7 +465,7 @@ tr:nth-child(even) {
 
     /*  ajustamos o tamanho do menu(nav) fazendo-o "esticar", aumentando o espaçamento dentro dele*/
     .menu {
-      
+
         width: 60%;
     }
 
@@ -422,11 +478,14 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width:1000px) {
-/* Aumentamos o tamanho base do font-size. Desta forma, todos os textos do site
+    /* Aumentamos o tamanho base do font-size. Desta forma, todos os textos do site
 (em especial os que usam REM), mudam de tamanho proporcionalmente */
 
-    html{ font-size: 28px;}
-        .topo .limitador{
-            height: 100px;
-        }
+    html {
+        font-size: 28px;
+    }
+
+    .topo .limitador {
+        height: 100px;
+    }
 }
