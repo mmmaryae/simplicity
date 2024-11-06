@@ -48,19 +48,19 @@
 
 
 
-<!-- <form> pegar ttodo o formulário -->
+                <!-- <form> pegar ttodo o formulário -->
 
                 <form action="" method="post">
-                <!-- Texto do lado do campo -->
+                    <!-- Texto do lado do campo -->
 
 
-                <!-- For: Conecta o label e input, atraves dos nomes do id e name  -->
+                    <!-- For: Conecta o label e input, atraves dos nomes do id e name  -->
 
-                <!-- Texto exibido"Nome:"" -->
-                <label for="nome">Nome:</label>
+                    <!-- Texto exibido"Nome:"" -->
+                    <label for="nome">Nome:</label>
 
-                <input type="text" name="nome" id="nome" placeholder="Digite o nome completo">
-                <!-- placeholder, uma orientação 'dentro' do input -->
+                    <input type="text" name="nome" id="nome" placeholder="Digite o nome completo">
+                    <!-- placeholder, uma orientação 'dentro' do input -->
 
             </div>
 
@@ -77,7 +77,34 @@
 
 
             </div>
-
+            <!-- INÍCIO HTML PARA CEP/ENDEREÇO -->
+            <div>
+                <label for="cep">CEP: <br><span id="status"></span></label>
+                <div id="area-do-cep">
+                    <!-- Usamos inputmode numerica para que
+        o teclado virtual mostre números e para que não seja mostrado botões adicionais no navegador desktop. -->
+                    <input maxlength="9" inputmode="numeric" placeholder="Somente números" type="text" id="cep"
+                        name="cep" required> <br>
+                    <button id="buscar">Buscar</button>
+                </div>
+            </div>
+            <div class="campos-restantes">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" size="30">
+            </div>
+            <div class="campos-restantes">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+            <div class="campos-restantes">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+            <div class="campos-restantes">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado">
+            </div>
+            <!-- /FIM HTML PARA CEP/ENDEREÇO -->
             <div>
                 <label for="telefone">Telefone:</label>
                 <input required type="tel" name="telefone" id="telefone">
@@ -112,7 +139,7 @@
 
             <!-- tornar o campo obrigatorio "required" -->
 
-        </form>
+            </form>
 
 
 
@@ -139,7 +166,7 @@
 
 
     <script src="js/menu.js"></script>
-
+    <script src="js/contato.js"></script>
 </body>
 
 </html>
