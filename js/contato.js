@@ -9,6 +9,23 @@ const campoEstado = document.querySelector("#estado");
 const botaoBuscar = document.querySelector("#buscar");
 const mensagemStatus = document.querySelector("#status");
 
+//Ativação das máscaras para 'telefone' e 'cep'
+
+//  $ "apelido/abreviação" para o querySelector
+
+//mask função do jquery 
+
+$(campoTelefone).mask("(00) 0000-0000");
+$(campoCep).mask("00000-000");
+
+
+
+
+
+
+
+
+
 //Ouvinte de evento para o botão Buscar
 botaoBuscar.addEventListener("click", async function () {
     //Verificar se ocep digitado pela pessoa não tem 9 dígitos
